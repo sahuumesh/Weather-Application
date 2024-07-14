@@ -1,0 +1,27 @@
+*{
+  background-image: linear-gradient(to right, rgb(46, 159, 182) , rgb(68,73,140));
+}
+
+#name{
+  color: white;
+  text-align: center;
+}
+/* rgb(68,73,140) */
+#location-form{
+  background-color: rgb(68,73,140);
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+}
+
+#location-input {
+  background-color: white !important;
+  color: white !important;
+}
+
+button{
+  background-color: white !important;
+  color: white !important;
+}

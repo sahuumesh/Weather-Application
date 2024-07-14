@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
 
 
-    <!-- Make the weather app containers and form here -->
+  <!-- Make the weather app containers and form here -->
+  <h1 id="name">Weather App</h1>
+  <form id="location-form">
+    <input type="text" id="location-input" name="city" placeholder="Enter city name"  style="background-color:white;" required>
+    <button type="submit">Get Weather</button>
+    <div id="weather-data"></div>
+  </form>
 
-    
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
