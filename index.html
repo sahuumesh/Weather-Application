@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Weather App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherScope</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+  <div class="container">
+    <h1 id="app-name"><i class="fas fa-cloud-sun"></i> WeatherScope</h1>
+    
+    <div class="controls">
+      <form id="location-form">
+        <div class="input-group">
+          <input type="text" id="location-input" placeholder="Enter city name" required>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      <button id="unit-toggle">°C / °F</button>
+    </div>
 
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+    </div>
 
-  <!-- Make the weather app containers and form here -->
-  <h1 id="name">Weather App</h1>
-  <form id="location-form">
-    <input type="text" id="location-input" name="city" placeholder="Enter city name"  style="background-color:white;" required>
-    <button type="submit">Get Weather</button>
-    <div id="weather-data"></div>
-  </form>
+    <div id="weather-data" class="hidden">
+      <!-- Weather content will be injected here -->
+    </div>
+
+    <div id="history-container">
+      <h3>Recent Searches:</h3>
+      <ul id="search-history"></ul>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
